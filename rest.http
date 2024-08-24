@@ -1,0 +1,41 @@
+POST http://localhost:3001/products/create
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyMWE4ZDEyNGU1MzE5Yzg5NDdhN2UiLCJpYXQiOjE3MTQ2MjI3ODEsImV4cCI6MTcxNDcwOTE4MX0.HR4isdyU3eKYI8JSCVWby3f8M0X-9qeLfrM37zdLfB0
+
+{
+  "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "image": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"],
+  "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+  "price": 2000,
+  "quantity": 5000,
+  "category_id": "65f32724c439b9d146b08e73",
+  "size_id": ["65fd04b5b9757a1948defccd","65fd04cdb9757a1948defccf","65fd04d1b9757a1948defcd1"],
+  "color_id": ["65fd041db9757a1948defcc6","65fec3c30e565b93bef8ae48","65fd043eb9757a1948defcc8"]
+}
+
+###
+GET http://localhost:3001/products/orders
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjIyMWE4ZDEyNGU1MzE5Yzg5NDdhN2UiLCJpYXQiOjE3MTUwMjI0ODksImV4cCI6MTcxNTEwODg4OX0.DR8UOEQhAqMasldy2euhg08eGYDfBpzeeAVAfIIca8U
+###
+POST  http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+      "email": "nhattan22@gmail.com",
+      "password": "nhattan22"
+}
+
+###
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+      "name": "abc",
+      "email": "kien22@gmail.com",
+      "password": "kien11111",
+      "phone": "0789611112"
+}
+
+###
+GET  http://localhost:3001/auth?page=2
